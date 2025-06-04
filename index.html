@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Winner Button</title>
+  <title>Dictionary Simulator</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-  <div id="button-container">
-    <button class="game-button" id="button1">Button 1</button>
-    <button class="game-button" id="button2">Button 2</button>
-    <button class="game-button" id="button3">Button 3</button>
-  </div>
-  <p id="message"></p>
+<body>    
+  <h3>Save a New Word</h3>
+  <input type="text" id="newWord" placeholder="Enter a new word">
+  <button onclick="saveWord()">Save Word</button>
+  <h3>Search for a Word</h3>
+  <input type="text" id="searchWord" placeholder="Enter a word to search">
+  <button onclick="checkWord()">Search Word</button>
+  <div id="message"></div>
   <script src="scripts/main.js"></script>
 </body>
 </html>
